@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-image: url(../img/backgroundPicture.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tamanho-imagem img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) -15%, rgba(0, 0, 0, 0.1) 75%), url(../img/newAirplane.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: block;
+  text-align: center;
+  padding: 100px;
+  line-height: 50px;
+}
+
+.plane {
+  color: rgb(1, 1, 60);
+  background-color: rgba(250, 250, 250, 0.3);
+  border-radius: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  max-height: 64px;
+  max-width: 64px;
+}
+
+.header h1 {
+  font-size: 64px;
+  color: rgb(33, 136, 136);
+  /* background-color: rgb(242, 242, 217); */
+  text-shadow: rgb(22, 80, 80) 1.95px 1.95px 2.6px;
+}
+
+.header p {
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
+.button {
+  font-family: sans-serif;
+  /* background-color: rgb(255, 255, 255); */
+
+  max-width: fit-content;
+  margin: 50px auto;
+  padding: 10px;
+
+  /* box-shadow: rgb(230, 230, 230) 0px 0px 0px 3px; */
+}
+
+.header a:any-link,
+.fa-caret-right {
+  color: white;
+  font-size: 16px;
+}
+
+.header a:any-link {
+  border-bottom: 3px solid rgb(255, 255, 255);
+  border-bottom-style: dashed;
+  font-size: 24px;
+}
+
+a:link,
+a:visited {
+  color: rgb(26, 65, 206);
+  text-decoration: dashed;
+}
+
+a:hover {
+  color: rgb(70, 100, 208);
+}
+
+a:active {
+  color: rgb(5, 53, 225);
+}
+
+.navbar {
+  background-color: rgb(239, 244, 249);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a:any-link {
+  display: inline-block;
+  color: black;
+  font-size: 16px;
+  margin-inline: 10px;
+  margin-top: 2px;
+}
+
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.about {
+  display: block;
+}
