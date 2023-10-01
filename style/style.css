@@ -18,7 +18,7 @@ html {
 }
 
 .header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) -15%, rgba(0, 0, 0, 0.1) 75%), url(../img/newAirplane.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) -15%, rgba(0, 0, 0, 0.1) 75%), url(../img/newAirplane.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -27,6 +27,8 @@ html {
   text-align: center;
   padding: 100px;
   line-height: 50px;
+
+  box-shadow: rgba(255, 0, 0, 1);
 }
 
 .plane {
@@ -123,5 +125,52 @@ p {
 }
 
 .about {
-  display: block;
+  background-color: rgb(248, 248, 255);
+  display: flex;
+  padding: 50px;
+}
+
+.about img {
+  max-width: 750px;
+  max-height: 500px;
+  padding: 25px;
+}
+
+.text {
+  padding: 100px;
+  padding-top: 0px;
+}
+
+h2 {
+  margin-block: 50px;
+  background: linear-gradient(90deg, rgb(33, 136, 136) 0%, rgb(115, 24, 96) 50%, rgb(26, 207, 243) 100%);
+  background-repeat: no-repeat;
+  background-size: 100px 3px;
+  background-position: bottom left;
+}
+
+.blank {
+  display: flex;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.5) 125%);
+  height: 100px;
+}
+
+.discover {
+  background-color: rgb(248, 248, 255);
+  padding: 50px;
+  height: 800px;
+}
+
+.discover img {
+  display: flex;
+  max-width: 750px;
+}
+
+li {
+  list-style: none;
+}
+
+.travel {
+  background-color: rgb(248, 248, 255);
+  display: flex;
 }
