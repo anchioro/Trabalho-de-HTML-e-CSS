@@ -50,17 +50,28 @@
     <main>
       <div id="about">
         <section class="about">
-          <h2>Sobre</h2>
-          <p>
-            Junte-se a uma comunidade de viajantes entusiastas para compartilhar histórias, fotos e conselhos de viagem.
-            Faça conexões com pessoas que compartilham a mesma paixão por explorar o mundo.
-          </p>
+          <div class="text">
+            <h2>Sobre</h2>
+            <p>
+              Junte-se a uma vibrante comunidade de viajantes entusiastas que estão prontos para compartilhar suas
+              aventuras pelo mundo. Aqui, você terá a oportunidade de não apenas compartilhar suas próprias histórias e
+              fotos de viagem, mas também absorver uma riqueza de experiências e conselhos valiosos de outros
+              exploradores apaixonados.
+            </p>
+          </div>
+          <img src="img/grupoPessoas.jpg" alt="Grupo de pessoas" />
         </section>
+      </div>
+
+      <div class="blank">
+        <hr />
       </div>
 
       <div id="discover">
         <section class="discover">
-          <h2>Conheça novos lugares</h2>
+          <div class="text">
+            <h2>Conheça novos lugares</h2>
+          </div>
           <ul class="tamanho-imagem">
             <li>
               <img src="img/pictureRJ.jpg" alt="Rio de Janeiro, RJ, Brasil" />
@@ -75,33 +86,39 @@
         </section>
       </div>
 
+      <div class="blank">
+        <hr />
+      </div>
+
       <div id="travel">
-        <h2>Planejar sua próxima viagem</h2>
+        <div class="travel">
+          <h2>Planejar sua próxima viagem</h2>
 
-        <form method="get">
-          <i class="fa-solid fa-plane-departure"></i>
-          <label for="from">De</label>
-          <input type="text" name="from" id="from" placeholder="De onde você está saindo?" />
+          <form method="get">
+            <i class="fa-solid fa-plane-departure"></i>
+            <label for="from">De</label>
+            <input type="text" name="from" id="from" placeholder="De onde você está saindo?" />
 
-          <i class="fa-solid fa-plane-arrival"></i>
-          <label for="to">Para</label>
-          <input type="text" name="to" id="to" placeholder="Para onde você vai?" />
+            <i class="fa-solid fa-plane-arrival"></i>
+            <label for="to">Para</label>
+            <input type="text" name="to" id="to" placeholder="Para onde você vai?" />
 
-          <i class="fa-solid fa-calendar-days"></i>
-          <label for="date1">Ida</label>
-          <input type="date" name="date1" id="date1" min="2023-10-01" />
+            <i class="fa-solid fa-calendar-days"></i>
+            <label for="date1">Ida</label>
+            <input type="date" name="date1" id="date1" min="2023-10-01" />
 
-          <i class="fa-solid fa-calendar-days"></i>
-          <label for="date2">Volta</label>
-          <input type="date" name="date2" id="date2" min="2023-10-01" />
+            <i class="fa-solid fa-calendar-days"></i>
+            <label for="date2">Volta</label>
+            <input type="date" name="date2" id="date2" min="2023-10-01" />
 
-          <i class="fa-solid fa-users"></i>
-          <label for="people">Passageiros</label>
-          <input type="number" name="people" id="people" value="1" />
+            <i class="fa-solid fa-users"></i>
+            <label for="people">Passageiros</label>
+            <input type="number" name="people" id="people" value="1" />
 
-          <!-- <button>Buscar Voos</button> -->
-          <a href="">Buscar Voos</a>
-        </form>
+            <!-- <button>Buscar Voos</button> -->
+            <a href="">Buscar Voos</a>
+          </form>
+        </div>
       </div>
     </main>
 
@@ -112,7 +129,7 @@
         <dd>São Paulo, São Paulo - Tanana, 123</dd>
 
         <dt>Email</dt>
-        <dd>roteiroventura@atendimento.com</dd>
+        <dd><a href="mailto:roteiroventura@atendimento.com">roteiroventura@atendimento.com</a></dd>
 
         <dt>Telefone</dt>
         <dd>(11) 9 7732-4961</dd>
