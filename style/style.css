@@ -12,11 +12,6 @@ html {
   background-size: cover;
 }
 
-.tamanho-imagem img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 .header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) -15%, rgba(0, 0, 0, 0.1) 75%), url(../img/newAirplane.jpg);
   background-size: cover;
@@ -52,6 +47,9 @@ html {
   font-family: sans-serif;
   color: rgb(255, 255, 255);
   font-size: 24px;
+  margin-left: 0px;
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .button {
@@ -77,6 +75,10 @@ html {
   font-size: 24px;
 }
 
+.header a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 a:link,
 a:visited {
   color: rgb(26, 65, 206);
@@ -91,6 +93,10 @@ a:active {
   color: rgb(5, 53, 225);
 }
 
+a:any-link {
+  -webkit-user-drag: none;
+}
+
 .navbar {
   background-color: rgb(239, 244, 249);
   position: fixed;
@@ -98,6 +104,7 @@ a:active {
   width: 100%;
   height: 25px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 10;
 }
 
 .navbar li {
@@ -113,15 +120,25 @@ a:active {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 40px;
   text-transform: uppercase;
   font-family: sans-serif;
   font-weight: lighter;
+
+  margin-block: 50px;
+  margin-left: 50px;
 }
 
 p {
   font-size: 24px;
   font-family: sans-serif;
+  background-color: rgb(250, 246, 172);
+
+  margin-left: 50px;
+  line-height: 30px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  text-indent: 50px;
 }
 
 .about {
@@ -130,44 +147,121 @@ p {
   padding: 50px;
 }
 
+.about p {
+  background-color: rgb(248, 248, 255);
+}
+
 .about img {
   max-width: 750px;
   max-height: 500px;
   padding: 25px;
-}
-
-.text {
-  padding: 100px;
-  padding-top: 0px;
-}
-
-h2 {
-  margin-block: 50px;
-  background: linear-gradient(90deg, rgb(33, 136, 136) 0%, rgb(115, 24, 96) 50%, rgb(26, 207, 243) 100%);
-  background-repeat: no-repeat;
-  background-size: 100px 3px;
-  background-position: bottom left;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .blank {
   display: flex;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.5) 125%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 100%);
   height: 100px;
 }
 
 .discover {
-  background-color: rgb(248, 248, 255);
+  background-image: url(../img/backgroundDiscover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 50px;
-  height: 800px;
-}
-
-.discover img {
-  display: flex;
-  max-width: 750px;
 }
 
 li {
   list-style: none;
+}
+
+h3 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: normal;
+
+  margin-block: 50px;
+  margin-left: 50px;
+
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgb(43, 44, 114) 100%);
+  background-size: 150px 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.discover p {
+  padding: 10px;
+  padding-top: 40px;
+}
+
+.lista {
+  display: block;
+}
+
+.lista .lista-elemento {
+  display: flex;
+  padding: 25px;
+}
+
+.lista-filtro {
+  display: flex;
+}
+
+.lista-filtro li {
+  padding-inline: 10px;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(-1.5deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(-2.5deg);
+  }
+}
+
+.esquerda img {
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.15) -1.95px 1.95px 2.6px;
+}
+
+.direita img {
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.zoom-in:hover {
+  animation: zoom-in 0.2s ease forwards;
+}
+
+.nota {
+  position: relative;
+}
+
+.nota img {
+  height: 52px;
+  width: 52px;
+  box-shadow: none;
+  padding: 0px;
+
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+img {
+  -webkit-user-drag: none;
 }
 
 .travel {
