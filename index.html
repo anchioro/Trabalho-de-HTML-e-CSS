@@ -124,34 +124,58 @@
       </div>
 
       <div id="travel">
-        <div class="travel">
+        <section class="travel">
           <h2>Planejar sua próxima viagem</h2>
 
-          <form method="get">
-            <i class="fa-solid fa-plane-departure"></i>
-            <label for="from">De</label>
-            <input type="text" name="from" id="from" placeholder="De onde você está saindo?" />
+          <div class="formulario">
+            <form method="get">
+              <h3>Passagens Aéreas</h3>
+              <div class="caixa-formulario">
+                <label for="from">De onde você está saindo?</label>
+                <input type="text" name="from" id="from" placeholder="Aeroporto" />
+                <span>
+                  <i class="fa-solid fa-plane-departure"></i>
+                </span>
+              </div>
 
-            <i class="fa-solid fa-plane-arrival"></i>
-            <label for="to">Para</label>
-            <input type="text" name="to" id="to" placeholder="Para onde você vai?" />
+              <div class="caixa-formulario">
+                <label for="to">Para onde você vai?</label>
+                <input type="text" name="to" id="to" placeholder="Aeroporto" />
+                <span>
+                  <i class="fa-solid fa-plane-arrival"></i>
+                </span>
+              </div>
 
-            <i class="fa-solid fa-calendar-days"></i>
-            <label for="date1">Ida</label>
-            <input type="date" name="date1" id="date1" min="2023-10-01" />
+              <div class="caixa-formulario">
+                <label for="date1">Ida</label>
+                <input type="date" name="date1" id="date1" min="2023-10-01" />
+                <span>
+                  <i class="fa-solid fa-calendar-days"></i>
+                </span>
+              </div>
 
-            <i class="fa-solid fa-calendar-days"></i>
-            <label for="date2">Volta</label>
-            <input type="date" name="date2" id="date2" min="2023-10-01" />
+              <div class="caixa-formulario">
+                <label for="date2">Volta</label>
+                <input type="date" name="date2" id="date2" min="2023-10-01" />
+                <span>
+                  <i class="fa-solid fa-calendar-days"></i>
+                </span>
+              </div>
 
-            <i class="fa-solid fa-users"></i>
-            <label for="people">Passageiros</label>
-            <input type="number" name="people" id="people" value="1" />
-
-            <!-- <button>Buscar Voos</button> -->
+              <div class="caixa-formulario">
+                <label for="people">Passageiros</label>
+                <input type="number" name="people" id="people" value="1" min="1" />
+                <span>
+                  <i class="fa-solid fa-users"></i>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="button">
             <a href="">Buscar Voos</a>
-          </form>
-        </div>
+            <i class="fa-solid fa-caret-right icon-cor"></i>
+          </div>
+        </section>
       </div>
     </main>
 

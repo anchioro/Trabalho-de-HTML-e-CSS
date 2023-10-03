@@ -39,7 +39,6 @@ html {
 .header h1 {
   font-size: 64px;
   color: rgb(33, 136, 136);
-  /* background-color: rgb(242, 242, 217); */
   text-shadow: rgb(22, 80, 80) 1.95px 1.95px 2.6px;
 }
 
@@ -52,49 +51,52 @@ html {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.header .button a,
+.fa-caret-right {
+  color: white;
+}
+
 .button {
   font-family: sans-serif;
-  /* background-color: rgb(255, 255, 255); */
 
   max-width: fit-content;
   margin: 50px auto;
   padding: 10px;
-
-  /* box-shadow: rgb(230, 230, 230) 0px 0px 0px 3px; */
 }
 
-.header a:any-link,
-.fa-caret-right {
-  color: white;
-  font-size: 16px;
-}
-
-.header a:any-link {
-  border-bottom: 3px solid rgb(255, 255, 255);
+.button a:any-link {
   border-bottom-style: dashed;
+}
+
+a:any-link {
   font-size: 24px;
-}
-
-.header a:hover {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-a:link,
-a:visited {
-  color: rgb(26, 65, 206);
-  text-decoration: dashed;
-}
-
-a:hover {
-  color: rgb(70, 100, 208);
-}
-
-a:active {
-  color: rgb(5, 53, 225);
+  text-decoration: none;
 }
 
 a:any-link {
   -webkit-user-drag: none;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(8px);
+  }
+}
+
+.button:hover .fa-caret-right {
+  animation: move 0.1s ease forwards;
 }
 
 .navbar {
@@ -117,6 +119,8 @@ a:any-link {
   font-size: 16px;
   margin-inline: 10px;
   margin-top: 2px;
+
+  border-bottom-style: none;
 }
 
 h2 {
@@ -125,7 +129,7 @@ h2 {
   font-family: sans-serif;
   font-weight: lighter;
 
-  margin-block: 50px;
+  margin-bottom: 50px;
   margin-left: 50px;
 }
 
@@ -266,5 +270,53 @@ img {
 
 .travel {
   background-color: rgb(248, 248, 255);
+  padding: 50px;
+}
+
+.formulario form {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(198, 198, 233);
+  padding-block: 15px;
+  border-radius: 15px;
+
+  flex-wrap: wrap;
+}
+
+.formulario h3 {
+  background: none;
+  padding-block: 50px;
+  margin: 0;
+}
+
+.caixa-formulario {
+  padding-inline: 25px;
+  text-wrap: nowrap;
+}
+
+.caixa-formulario label {
+  display: block;
+  font-size: 1.125rem;
+}
+
+.caixa-formulario input {
+  font-size: 1.5rem;
+  width: 10vw;
+}
+
+.caixa-formulario span {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  position: absolute;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.travel .button a,
+.icon-cor {
+  color: black;
+  font-size: 2rem;
 }
