@@ -168,6 +168,72 @@ p {
   height: 100px;
 }
 
+.travel {
+  background-color: rgb(248, 248, 255);
+  padding: 50px;
+}
+
+.formulario form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(198, 198, 233);
+  padding-block: 15px;
+  border-radius: 15px;
+
+  flex-wrap: wrap;
+}
+
+.formulario h3 {
+  background: none;
+  padding-block: 50px;
+  margin: 0;
+}
+
+.caixa-formulario {
+  padding-inline: 25px;
+  text-wrap: nowrap;
+}
+
+.caixa-formulario label {
+  display: block;
+  font-size: 1.125rem;
+}
+
+.caixa-formulario input {
+  font-size: 1.5rem;
+  width: 10vw;
+}
+
+.caixa-formulario span {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  position: absolute;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input,
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  color: #333;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.travel .button .fa-caret-right,
+a {
+  color: black;
+}
+
 .discover {
   background-image: url(../img/backgroundDiscover.png);
   background-repeat: no-repeat;
@@ -266,72 +332,6 @@ h3 {
 
 img {
   -webkit-user-drag: none;
-}
-
-.travel {
-  background-color: rgb(248, 248, 255);
-  padding: 50px;
-}
-
-.formulario form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(198, 198, 233);
-  padding-block: 15px;
-  border-radius: 15px;
-
-  flex-wrap: wrap;
-}
-
-.formulario h3 {
-  background: none;
-  padding-block: 50px;
-  margin: 0;
-}
-
-.caixa-formulario {
-  padding-inline: 25px;
-  text-wrap: nowrap;
-}
-
-.caixa-formulario label {
-  display: block;
-  font-size: 1.125rem;
-}
-
-.caixa-formulario input {
-  font-size: 1.5rem;
-  width: 10vw;
-}
-
-.caixa-formulario span {
-  margin-left: 5px;
-  font-size: 1.5rem;
-  position: absolute;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-input,
-textarea {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
-  color: #333;
-}
-
-input:focus,
-textarea:focus {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.travel .button .fa-caret-right,
-a {
-  color: black;
 }
 
 .footer__main {
