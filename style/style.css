@@ -315,8 +315,165 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.travel .button a,
-.icon-cor {
+input,
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  color: #333;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.travel .button .fa-caret-right,
+a {
   color: black;
-  font-size: 2rem;
+}
+
+.footer__main {
+  background-color: rgb(239, 244, 249);
+}
+
+.footer__main--column-content {
+  padding: 3.125rem;
+  display: flex;
+}
+
+.footer__main h2 {
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+  padding: 25px;
+
+  font-size: 1.75rem;
+}
+
+.footer__main--message {
+  width: 50%;
+}
+
+.footer__main--forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__main--forms label {
+  display: block;
+}
+
+.footer__main--forms input,
+textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.footer__main--forms textarea {
+  width: 100%;
+  max-width: 100%;
+
+  height: 100px;
+  max-height: 100px;
+}
+
+.form-group {
+  width: 50%;
+  display: block;
+}
+
+.footer__main--forms .button .fa-caret-right,
+a {
+  color: black;
+  font-size: 1rem;
+}
+
+.footer__main--forms .button {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.linha-vertical {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: black;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+
+.footer__main--contato {
+  width: 50%;
+}
+
+.footer__main--endereco {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+
+  font-family: sans-serif;
+}
+
+.footer__main--bloco-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.footer__main dt {
+  font-weight: bold;
+  margin: 0px 100px 15px 0px;
+}
+
+.footer__main--contato a:any-link {
+  text-decoration: dotted underline;
+  font-size: 1rem;
+}
+
+.footer__main--redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__main--redes-sociais li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid gray;
+  border-radius: 100%;
+
+  font-size: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+
+  margin: 0px 25px 25px 25px;
+}
+
+.footer__main--redes-sociais .fa-github {
+  font-size: 1.5rem;
+}
+
+.footer__main--copyright {
+  text-align: center;
+}
+
+.footer__main .footer__main--copyright p {
+  padding: 0;
+  margin: 0;
+
+  background-color: rgb(203, 207, 210);
+  font-size: x-small;
+}
+
+.footer__main .footer__main--copyright a {
+  font-size: x-small;
 }
