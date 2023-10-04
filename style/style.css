@@ -101,12 +101,17 @@ a:any-link {
 
 .navbar {
   background-color: rgb(239, 244, 249);
-  position: fixed;
-  top: 0;
-  width: 100%;
+  position: relative;
   height: 25px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 10;
+}
+
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .navbar li {
