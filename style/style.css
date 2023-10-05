@@ -518,21 +518,22 @@ a {
   padding: 5vmin;
 
   background-color: rgb(248, 248, 255);
-  width: 100%;
+
+  max-width: 100%;
 }
 
 .main__container--gallery ul {
   display: flex;
   flex-wrap: wrap;
 
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .main__container--gallery img {
-  max-width: 33vw;
-  max-height: 281px;
+  max-width: 90vw;
+  max-height: 300px;
 
-  margin-right: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 1vh;
+  margin-right: 1vh;
 }
