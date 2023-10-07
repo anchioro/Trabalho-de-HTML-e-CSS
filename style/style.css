@@ -106,6 +106,7 @@ a:any-link {
   background-color: rgba(200, 225, 249, 1);
   position: relative;
   height: 50px;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 15px;
   z-index: 10;
 }
@@ -182,21 +183,141 @@ p {
   text-indent: 50px;
 }
 
-.about {
-  background-color: rgb(248, 248, 255);
-  display: flex;
-  padding: 50px;
+@media screen and (min-width: 1001px) {
+  .about {
+    background-color: rgb(248, 248, 255);
+    display: flex;
+    padding: 50px;
+  }
+
+  .about img {
+    max-width: 50vw;
+    max-height: 35vw;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .formulario h3 {
+    background: none;
+    padding-block: 50px;
+    margin: 0;
+  }
+
+  .formulario form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 198, 233);
+    padding-block: 15px;
+    border-radius: 15px;
+
+    flex-wrap: wrap;
+  }
+
+  .caixa-formulario {
+    padding-right: 25px;
+    text-wrap: nowrap;
+  }
+
+  .caixa-formulario input {
+    font-size: 1.5rem;
+    width: 10vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    background-color: rgb(248, 248, 255);
+    display: block;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .about img {
+    max-height: 45vw;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .formulario h3 {
+    background: none;
+    padding-block: 50px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .formulario form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 198, 233);
+    padding-block: 15px;
+    border-radius: 15px;
+
+    flex-wrap: wrap;
+  }
+
+  .caixa-formulario {
+    text-align: center;
+    padding-left: 25px;
+  }
+
+  .caixa-formulario input {
+    font-size: 1.5rem;
+    width: 50vw;
+  }
 }
 
 .about p {
+  text-align: start;
   background-color: rgb(248, 248, 255);
 }
 
-.about img {
-  max-width: 750px;
-  max-height: 500px;
-  padding: 25px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+@media screen and (max-width: 600px) {
+  .about h2 {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 25px;
+  }
+
+  .about p {
+    text-align: start;
+    background-color: rgb(248, 248, 255);
+    text-indent: 0px;
+  }
+
+  .formulario h3 {
+    background: none;
+    padding-block: 50px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .formulario form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 198, 233);
+    padding-block: 15px;
+    border-radius: 15px;
+
+    flex-wrap: wrap;
+  }
+
+  .caixa-formulario {
+    text-align: center;
+    padding-left: 25px;
+  }
+
+  .caixa-formulario input {
+    font-size: 1.5rem;
+    width: 50vw;
+  }
 }
 
 .blank {
@@ -210,44 +331,14 @@ p {
   padding: 50px;
 }
 
-.formulario form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(198, 198, 233);
-  padding-block: 15px;
-  border-radius: 15px;
-
-  flex-wrap: wrap;
-}
-
-.formulario h3 {
-  background: none;
-  padding-block: 50px;
-  margin: 0;
-}
-
 .caixa-formulario {
   padding-right: 25px;
   text-wrap: nowrap;
 }
 
-.caixa-formulario:first-of-type {
-  padding-left: 25px;
-}
-
-.caixa-formulario:last-of-type {
-  padding-right: 0;
-}
-
 .caixa-formulario label {
   display: block;
   font-size: 1.125rem;
-}
-
-.caixa-formulario input {
-  font-size: 1.5rem;
-  width: 10vw;
 }
 
 .caixa-formulario span {
@@ -278,14 +369,6 @@ a {
   color: black;
 }
 
-.discover {
-  background-color: rgb(248, 248, 255);
-  background-image: url(../img/backgroundDiscover.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px;
-}
-
 li {
   list-style: none;
 }
@@ -308,15 +391,63 @@ h3 {
 .discover p {
   padding: 10px;
   padding-top: 40px;
+
+  margin: 0;
+}
+
+@media screen and (min-width: 1001px) {
+  .discover {
+    background-color: rgb(248, 248, 255);
+    background-image: url(../img/backgroundDiscover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+  }
+
+  .lista .lista-elemento {
+    display: flex;
+    padding: 25px;
+
+    align-items: center;
+  }
+
+  .direita img {
+    max-width: 50vw;
+    max-height: 35vw;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .discover {
+    background-color: rgb(248, 248, 255);
+    background-image: url(../img/backgroundDiscover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+  }
+
+  .lista .lista-elemento {
+    display: block;
+    padding: 25px;
+
+    text-align: center;
+  }
+
+  .direita img {
+    max-height: 45vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .lista .lista-elemento p {
+    text-align: left;
+    margin-bottom: 25px;
+  }
 }
 
 .lista {
   display: block;
-}
-
-.lista .lista-elemento {
-  display: flex;
-  padding: 25px;
 }
 
 .lista-filtro {
@@ -345,55 +476,26 @@ h3 {
   }
 }
 
-@keyframes rotateContrario {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(1deg);
-  }
-  50% {
-    transform: rotate(1.5deg);
-  }
-  75% {
-    transform: rotate(2deg);
-  }
-  100% {
-    transform: rotate(2.5deg);
-  }
-}
-
-.esquerda img {
-  padding: 25px;
-  box-shadow: rgba(0, 0, 0, 0.15) -1.95px 1.95px 2.6px;
-}
-
-.direita img {
-  padding: 25px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
 .rotate:hover {
   animation: rotate 0.2s ease forwards;
 }
 
-.contrario:hover {
-  animation: rotateContrario 0.2s ease forwards;
+.nota {
+  text-align: center;
 }
 
-.nota {
-  position: relative;
+.nota h3 {
+  text-align: start;
 }
 
 .nota img {
-  height: 52px;
-  width: 52px;
+  max-height: 40px;
+  max-width: 40px;
+
   box-shadow: none;
   padding: 0px;
 
   position: absolute;
-  top: 22%;
-  left: 50%;
   text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -405,11 +507,6 @@ img {
   background-color: rgb(239, 244, 249);
 }
 
-.footer__main--column-content {
-  padding: 3.125rem;
-  display: flex;
-}
-
 .footer__main h2 {
   padding: 0;
   margin: 0;
@@ -418,10 +515,6 @@ img {
   padding: 25px;
 
   font-size: 1.75rem;
-}
-
-.footer__main--message {
-  width: 50%;
 }
 
 .footer__main--forms {
@@ -479,11 +572,100 @@ a {
   width: 50%;
 }
 
-.footer__main--endereco {
-  display: grid;
-  grid-template-columns: min-content 1fr;
+@media screen and (min-width: 1001px) {
+  .footer__main--message {
+    width: 50%;
+  }
 
-  font-family: sans-serif;
+  .footer__main--column-content {
+    padding: 50px;
+    display: flex;
+  }
+
+  .footer__main--endereco {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    font-family: sans-serif;
+  }
+
+  .footer__main--redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__main--redes-sociais li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid gray;
+    border-radius: 100%;
+
+    font-size: 1.5rem;
+    height: 32px;
+    width: 32px;
+
+    margin-right: 1vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__main--message {
+    width: 50%;
+  }
+
+  .footer__main--column-content {
+    padding: 25px;
+    display: flex;
+  }
+
+  .footer__main--endereco {
+    display: grid;
+
+    font-family: sans-serif;
+  }
+
+  .footer__main--redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__main--redes-sociais li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid gray;
+    border-radius: 100%;
+
+    font-size: 1.5rem;
+    height: 32px;
+    width: 32px;
+
+    margin-right: 1vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__main--column-content {
+    padding: 25px;
+    display: block;
+  }
+
+  .footer__main--message {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .footer__main--contato {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer__main--bloco-1 {
@@ -496,33 +678,11 @@ a {
 
 .footer__main dt {
   font-weight: bold;
-  margin: 0px 100px 15px 0px;
 }
 
 .footer__main--contato a:any-link {
   text-decoration: dotted underline;
   font-size: 1rem;
-}
-
-.footer__main--redes-sociais {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer__main--redes-sociais li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border: 1px solid gray;
-  border-radius: 100%;
-
-  font-size: 1.5rem;
-  height: 2rem;
-  width: 2rem;
-
-  margin: 0px 25px 25px 25px;
 }
 
 .footer__main--redes-sociais .fa-github {
