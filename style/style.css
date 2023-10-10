@@ -103,7 +103,7 @@ a:any-link {
 }
 
 .navbar {
-  background-color: rgba(200, 225, 249, 1);
+  background-color: rgb(224, 234, 244);
   position: relative;
   height: 50px;
   width: 100%;
@@ -112,7 +112,7 @@ a:any-link {
 }
 
 .navbar.fixed {
-  background-color: rgba(200, 225, 249, 0.7);
+  background-color: rgb(224, 234, 244);
   box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 15px;
 
   position: fixed;
@@ -135,7 +135,7 @@ a:any-link {
   padding: 10px;
   border-radius: 10px;
 
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.037);
 }
 
 @keyframes increase {
@@ -183,14 +183,21 @@ p {
   text-indent: 50px;
 }
 
-@media screen and (min-width: 1001px) {
+.about p {
+  text-align: start;
+  background-color: rgb(189, 201, 224);
+}
+
+@media screen and (min-width: 1000px) {
   .about {
-    background-color: rgb(248, 248, 255);
+    background-color: rgb(189, 201, 224);
     display: flex;
     padding: 50px;
   }
 
   .about img {
+    background-color: rgb(255, 255, 255);
+
     max-width: 50vw;
     max-height: 35vw;
     padding: 25px;
@@ -201,16 +208,16 @@ p {
     background: none;
     padding-block: 50px;
     margin: 0;
+    margin-right: 1vw;
   }
 
   .formulario form {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(198, 198, 233);
+    background-color: rgb(189, 201, 224);
     padding-block: 15px;
     border-radius: 15px;
-
     flex-wrap: wrap;
   }
 
@@ -223,100 +230,69 @@ p {
     font-size: 1.5rem;
     width: 10vw;
   }
-}
 
-@media screen and (max-width: 1000px) {
-  .about {
+  .discover {
     background-color: rgb(248, 248, 255);
-    display: block;
-    text-align: center;
-    padding: 25px;
+    background-image: url(../img/backgroundDiscover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
   }
 
-  .about img {
-    max-height: 45vw;
+  .lista .lista-elemento {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+  }
+
+  .esquerda {
+    flex-direction: row-reverse;
+  }
+
+  .direita img {
+    max-width: 50vw;
+    max-height: 35vw;
     padding: 25px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
 
-  .navbar {
-    display: none;
+  .rotate {
+    margin-inline: 25px;
+
+    background-color: rgb(255, 255, 255);
   }
 
-  .formulario h3 {
-    background: none;
-    padding-block: 50px;
-    margin: 0;
-    text-align: center;
+  .footer__main--message {
+    width: 50%;
   }
 
-  .formulario form {
-    display: block;
+  .footer__main--column-content {
+    padding: 50px;
+    display: flex;
+  }
+
+  .footer__main--endereco {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: sans-serif;
+  }
+
+  .footer__main--redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__main--redes-sociais li {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(198, 198, 233);
-    padding-block: 15px;
-    border-radius: 15px;
-
-    flex-wrap: wrap;
-  }
-
-  .caixa-formulario {
-    text-align: center;
-    padding-left: 25px;
-  }
-
-  .caixa-formulario input {
+    border: 1px solid gray;
+    border-radius: 100%;
     font-size: 1.5rem;
-    width: 50vw;
-  }
-}
-
-.about p {
-  text-align: start;
-  background-color: rgb(248, 248, 255);
-}
-
-@media screen and (max-width: 600px) {
-  .about h2 {
-    margin: 0;
-    padding: 0;
-
-    margin-bottom: 25px;
-  }
-
-  .about p {
-    text-align: start;
-    background-color: rgb(248, 248, 255);
-    text-indent: 0px;
-  }
-
-  .formulario h3 {
-    background: none;
-    padding-block: 50px;
-    margin: 0;
-    text-align: center;
-  }
-
-  .formulario form {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(198, 198, 233);
-    padding-block: 15px;
-    border-radius: 15px;
-
-    flex-wrap: wrap;
-  }
-
-  .caixa-formulario {
-    text-align: center;
-    padding-left: 25px;
-  }
-
-  .caixa-formulario input {
-    font-size: 1.5rem;
-    width: 50vw;
+    height: 32px;
+    width: 32px;
+    margin-right: 1vw;
   }
 }
 
@@ -374,76 +350,22 @@ li {
 }
 
 h3 {
-  font-size: 28px;
-  text-transform: uppercase;
+  font-size: 32px;
+  text-transform: capitalize;
   font-family: sans-serif;
-  font-weight: normal;
+  font-weight: 300;
 
-  margin-block: 50px;
-  margin-left: 50px;
+  margin-bottom: 50px;
 
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgb(43, 44, 114) 100%);
   background-size: 150px 2px;
   background-repeat: no-repeat;
   background-position: left bottom;
 }
 
 .discover p {
-  padding: 10px;
-  padding-top: 40px;
+  padding: 60px 10px 25px 25px;
 
   margin: 0;
-}
-
-@media screen and (min-width: 1001px) {
-  .discover {
-    background-color: rgb(248, 248, 255);
-    background-image: url(../img/backgroundDiscover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px;
-  }
-
-  .lista .lista-elemento {
-    display: flex;
-    padding: 25px;
-
-    align-items: center;
-  }
-
-  .direita img {
-    max-width: 50vw;
-    max-height: 35vw;
-    padding: 25px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .discover {
-    background-color: rgb(248, 248, 255);
-    background-image: url(../img/backgroundDiscover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-  }
-
-  .lista .lista-elemento {
-    display: block;
-    padding: 25px;
-
-    text-align: center;
-  }
-
-  .direita img {
-    max-height: 45vw;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
-
-  .lista .lista-elemento p {
-    text-align: left;
-    margin-bottom: 25px;
-  }
 }
 
 .lista {
@@ -482,6 +404,12 @@ h3 {
 
 .nota {
   text-align: center;
+}
+
+.nota p {
+  text-align: left;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
 }
 
 .nota h3 {
@@ -524,6 +452,7 @@ img {
 }
 
 .footer__main--forms label {
+  text-align: left;
   display: block;
 }
 
@@ -572,108 +501,14 @@ a {
   width: 50%;
 }
 
-@media screen and (min-width: 1001px) {
-  .footer__main--message {
-    width: 50%;
-  }
-
-  .footer__main--column-content {
-    padding: 50px;
-    display: flex;
-  }
-
-  .footer__main--endereco {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-
-    font-family: sans-serif;
-  }
-
-  .footer__main--redes-sociais {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer__main--redes-sociais li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 1px solid gray;
-    border-radius: 100%;
-
-    font-size: 1.5rem;
-    height: 32px;
-    width: 32px;
-
-    margin-right: 1vw;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .footer__main--message {
-    width: 50%;
-  }
-
-  .footer__main--column-content {
-    padding: 25px;
-    display: flex;
-  }
-
-  .footer__main--endereco {
-    display: grid;
-
-    font-family: sans-serif;
-  }
-
-  .footer__main--redes-sociais {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer__main--redes-sociais li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 1px solid gray;
-    border-radius: 100%;
-
-    font-size: 1.5rem;
-    height: 32px;
-    width: 32px;
-
-    margin-right: 1vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .footer__main--column-content {
-    padding: 25px;
-    display: block;
-  }
-
-  .footer__main--message {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-
-  .footer__main--contato {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-}
-
 .footer__main--bloco-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  margin-bottom: 25px;
+.footer__main--bloco-1 dd {
+  margin-bottom: 10px;
 }
 
 .footer__main dt {
@@ -706,8 +541,6 @@ a {
 }
 
 .main__container {
-  padding: 5vmin;
-
   background-color: rgb(248, 248, 255);
 
   max-width: 100%;
@@ -722,9 +555,196 @@ a {
 }
 
 .main__container--gallery img {
-  max-width: 90vw;
+  max-width: 32vw;
   max-height: 300px;
 
   margin-bottom: 1vh;
   margin-right: 1vh;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 50px;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .about {
+    background-color: rgb(189, 201, 224);
+    display: block;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .about h2 {
+    margin: 0px;
+    margin-bottom: 25px;
+
+    font-size: 2rem;
+  }
+
+  .about p {
+    margin: 0px;
+
+    font-size: 1rem;
+
+    line-height: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-indent: 25px;
+  }
+
+  .about img {
+    max-width: 85vw;
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .travel {
+    padding: 25px;
+  }
+
+  .travel h2 {
+    margin: 0px;
+    margin-bottom: 25px;
+
+    font-size: 2rem;
+  }
+
+  .formulario h3 {
+    font-size: 1.75rem;
+
+    background: none;
+    padding-block: 50px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .formulario form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 198, 233);
+    padding-block: 15px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+  }
+
+  .caixa-formulario {
+    text-align: center;
+    padding-left: 25px;
+  }
+
+  .caixa-formulario input {
+    font-size: 1.5rem;
+    width: 50vw;
+  }
+
+  .discover {
+    background-color: rgb(248, 248, 255);
+    background-image: url(../img/backgroundDiscover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+  }
+
+  .discover h2 {
+    margin: 0px;
+    margin-bottom: 25px;
+
+    font-size: 2rem;
+  }
+
+  .discover h3 {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 1.75rem;
+  }
+
+  .discover p {
+    line-height: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-indent: 25px;
+
+    font-size: 1rem;
+  }
+
+  .lista .lista-elemento {
+    display: block;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .direita img {
+    max-height: 45vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .nota img {
+    max-height: 40px;
+    max-width: 40px;
+
+    box-shadow: none;
+  }
+
+  .lista .lista-elemento p {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  .footer__main--forms label {
+    text-align: left;
+  }
+
+  .footer__main--endereco {
+    display: grid;
+    font-family: sans-serif;
+  }
+
+  .footer__main--redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__main--redes-sociais li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    height: 32px;
+    width: 32px;
+    margin-right: 1vw;
+  }
+
+  .footer__main--column-content {
+    padding: 25px;
+    display: block;
+  }
+
+  .footer__main--message {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .footer__main--contato {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .footer__main--bloco-1 {
+    text-align: left;
+  }
 }
