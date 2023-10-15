@@ -683,6 +683,59 @@ img {
   z-index: 1;
 }
 
+.next__page {
+  background-color: #bdc9e0;
+  padding-block: 35px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.next__page .button {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+
+  margin-inline: 50px;
+}
+
+.next__page .button a {
+  border-bottom-style: none;
+}
+
+.next__page .fa-caret-right {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.next__page .fa-caret-left {
+  font-size: 1.5rem;
+  color: black;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform: translateX(-8px);
+  }
+}
+
+.button:hover .fa-caret-left {
+  animation: moveLeft 0.1s ease forwards;
+}
+
 @media screen and (max-width: 600px) {
   .header {
     padding: 50px;
@@ -933,5 +986,19 @@ img {
   .bloco__viagem--2 .main__container--gallery img {
     max-width: 90vw;
     padding-block: 10px;
+  }
+
+  .next__page .text a {
+    display: none;
+  }
+
+  .next__page .fa-caret-right {
+    font-size: 2rem;
+    color: black;
+  }
+
+  .next__page .fa-caret-left {
+    font-size: 2rem;
+    color: black;
   }
 }
