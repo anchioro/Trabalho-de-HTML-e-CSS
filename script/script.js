@@ -1,3 +1,4 @@
+// Interatividade da navbar mudar sua position dependendo da rolagem da página
 window.addEventListener("scroll", function () {
   var navbar = document.querySelector(".navbar");
 

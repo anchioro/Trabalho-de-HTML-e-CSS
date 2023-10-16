@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Meta informações -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viagens | Roteiro Ventura</title>
 
+    <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="style/style.css" />
+
+    <!-- Ícone da página (favicon) -->
     <link rel="icon" href="img/iconHeader.png" />
 
+    <!-- Inclusão do arquivo JavaScript externo -->
     <script src="script/script.js"></script>
+
+    <!-- Inclusão da biblioteca Font Awesome -->
     <script src="https://kit.fontawesome.com/e8aef84763.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="home">
+      <!-- Início do header -->
       <div class="header">
         <img src="img/travel.gif" alt="Ícone do Cabeçalho" class="plane" />
+
         <h1>Roteiro Ventura</h1>
         <p>O lugar ideal para você planejar suas viagens.</p>
+
         <div class="button">
-          <a href="index.html#travel">Começar</a>
+          <a href="#travel">Começar</a>
           <i class="fa-solid fa-caret-right"></i>
         </div>
       </div>
     </header>
 
     <nav id="navbar">
+      <!-- Definição do conteúdo da navbar contidas em uma lista não ordenada -->
       <div class="navbar">
         <ul>
           <li>
@@ -50,10 +61,12 @@
     </nav>
 
     <main>
+      <!-- Definição do bloco global de cima -->
       <div class="bloco__viagem">
         <div id="bloco__viagem--3">
           <h2>Vancouver</h2>
 
+          <!-- Parte de cima do bloco antes do <hr> -->
           <div class="bloco__viagem--header">
             <div>
               <h3>Resumo da Viagem</h3>
@@ -66,12 +79,16 @@
                 atividades ao ar livre são abundantes.
               </p>
 
+              <!-- Linha horizontal -->
               <hr />
 
+              <!-- Conteúdo principal do bloco -->
               <div class="bloco__viagem--main">
                 <h3>Atrações e Destaques</h3>
 
+                <!-- Criação de um container para definir display flex -->
                 <div class="bloco__viagem--flex">
+                  <!-- Conteúdo contido dentro do display flex -->
                   <div class="flex-conteudo">
                     <h4>Stanley Park <i class="fa-solid fa-tree"></i></h4>
                     <p>
@@ -98,28 +115,27 @@
                 </div>
               </div>
             </div>
+            <!-- Imagem lateral -->
             <img src="img/CB1.jpg" alt="Picture Vancouver Header" />
           </div>
         </div>
       </div>
 
+      <!-- Definição do bloco global de baixo -->
       <div class="bloco__viagem--2">
+        <!-- Utilização da "gallery" e lista não ordenada de imagens -->
         <div class="main__container--gallery">
           <ul>
-            <li>
-              <img src="img/CB2.jpg" alt="Picture SC" />
-            </li>
-            <li>
-              <img src="img/CB3.jpg" alt="Picture SC" />
-            </li>
-            <li>
-              <img src="img/CB4.jpg" alt="Picture SC" />
-            </li>
+            <li><img src="img/CB2.jpg" alt="Picture SC" /></li>
+            <li><img src="img/CB3.jpg" alt="Picture SC" /></li>
+            <li><img src="img/CB4.jpg" alt="Picture SC" /></li>
           </ul>
         </div>
       </div>
 
+      <!-- Definição do container para passar ou voltar de página -->
       <div class="next__page">
+        <!-- Adição do botão para voltar -->
         <div class="button">
           <a href="pagina2.html#bloco__viagem--2"><i class="fa-solid fa-caret-left"></i></a>
           <div class="text">
@@ -127,6 +143,7 @@
           </div>
         </div>
 
+        <!-- Adição do botão para continuar -->
         <div class="button">
           <div class="text">
             <a href="pagina1.html#bloco__viagem--1">Próxima Página</a>
@@ -139,9 +156,11 @@
         <hr />
       </div>
 
+      <!-- Bloco de Comentários -->
       <div class="comments__container">
         <h3>Comentários</h3>
 
+        <!-- Bloco de comentário 1 -->
         <div class="comments__container--bloco">
           <div class="comments__bloco--image">
             <img src="img/user.png" alt="" />
@@ -154,6 +173,7 @@
           </div>
         </div>
 
+        <!-- Bloco de comentário 2 -->
         <div class="comments__container--bloco">
           <div class="comments__bloco--image">
             <img src="img/aventureiro.jpg" alt="" />
@@ -176,6 +196,7 @@
           </div>
         </div>
 
+        <!-- Bloco de comentário 3 -->
         <div class="comments__container--bloco">
           <div class="comments__bloco--image">
             <img src="img/fotografo.jpg" alt="" />
@@ -197,6 +218,7 @@
           </div>
         </div>
 
+        <!-- Bloco de comentário 4 -->
         <div class="comments__container--bloco">
           <div class="comments__bloco--image">
             <img src="img/explorador.jpg" alt="" />
@@ -222,10 +244,13 @@
     </main>
 
     <footer id="footer" class="footer__main">
+      <!-- Criação de um container maior para englobar os outros elementos -->
       <div class="footer__main--column-content">
+        <!-- Seção para enviar mensagens -->
         <section class="footer__main--message">
           <h2>Envie uma mensagem</h2>
           <form class="footer__main--forms">
+            <!-- Separação de diferentes containers -->
             <div class="form-group">
               <label for="nome">Nome</label>
               <input type="text" name="nome" id="nome" placeholder="Digite o seu primeiro e último nome" />
@@ -250,10 +275,14 @@
           </form>
         </section>
 
+        <!-- Divisão vertical na parte inferior do site -->
         <div class="linha-vertical"></div>
 
+        <!-- Seção de informações de contato -->
         <section class="footer__main--contato">
           <h2>Contato</h2>
+
+          <!-- Informações de endereço e contatos -->
           <div class="footer__main--bloco-1">
             <address class="footer__main--endereco">
               <dt>Endereço</dt>
@@ -267,23 +296,29 @@
             </address>
           </div>
 
+          <!-- Segundo bloco contendo links para redes sociais -->
           <h2>Redes Sociais</h2>
           <ul class="footer__main--redes-sociais">
             <li>
               <i class="fa-brands fa-twitter"></i>
             </li>
+
             <li>
               <i class="fa-brands fa-instagram"></i>
             </li>
+
             <li>
               <i class="fa-brands fa-facebook-f"></i>
             </li>
+
             <li>
               <a href="https://github.com/anchioro"><i class="fa-brands fa-github"></i></a>
             </li>
           </ul>
         </section>
       </div>
+
+      <!-- Divisão menor para mostrar o "copyright" -->
       <div class="footer__main--copyright">
         <p>Feito por <a href="https://github.com/anchioro">Mateus Hennich</a> - 2023</p>
       </div>

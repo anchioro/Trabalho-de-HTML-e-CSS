@@ -3,30 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Licença de uso | Roteiro Ventura</title>
+    <title>Licença | Roteiro Ventura</title>
 
+    <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="style/style.css" />
+
+    <!-- Ícone da página (favicon) -->
     <link rel="icon" href="img/iconHeader.png" />
 
+    <!-- Inclusão do arquivo JavaScript externo -->
     <script src="script/script.js"></script>
+
+    <!-- Inclusão da biblioteca Font Awesome -->
     <script src="https://kit.fontawesome.com/e8aef84763.js" crossorigin="anonymous"></script>
 
+    <!-- Regra para abrir links em uma nova guia -->
     <base target="_blank" />
   </head>
   <body>
     <header id="home">
+      <!-- Início do header -->
       <div class="header">
         <img src="img/travel.gif" alt="Ícone do Cabeçalho" class="plane" />
+
         <h1>Roteiro Ventura</h1>
         <p>O lugar ideal para você planejar suas viagens.</p>
+
         <div class="button">
-          <a href="index.html#travel" target="_self">Começar</a>
+          <a href="#travel">Começar</a>
           <i class="fa-solid fa-caret-right"></i>
         </div>
       </div>
     </header>
 
-    <nav>
+    <nav id="navbar">
+      <!-- Definição do conteúdo da navbar contidas em uma lista indefinida -->
       <div class="navbar">
         <ul>
           <li>
@@ -257,10 +268,13 @@
     </main>
 
     <footer id="footer" class="footer__main">
+      <!-- Criação de um container maior para englobar os outros -->
       <div class="footer__main--column-content">
+        <!-- Seção para enviar mensagens -->
         <section class="footer__main--message">
           <h2>Envie uma mensagem</h2>
           <form class="footer__main--forms">
+            <!-- Separação de diferentes containers -->
             <div class="form-group">
               <label for="nome">Nome</label>
               <input type="text" name="nome" id="nome" placeholder="Digite o seu primeiro e último nome" />
@@ -285,10 +299,13 @@
           </form>
         </section>
 
+        <!-- Atribuição da linha vertical no meio da página -->
         <div class="linha-vertical"></div>
 
+        <!-- Seção de contatos -->
         <section class="footer__main--contato">
           <h2>Contato</h2>
+          <!-- Criação do bloco de cima contendo o endereço -->
           <div class="footer__main--bloco-1">
             <address class="footer__main--endereco">
               <dt>Endereço</dt>
@@ -302,23 +319,29 @@
             </address>
           </div>
 
+          <!-- Segundo bloco contendo as redes sociais -->
           <h2>Redes Sociais</h2>
           <ul class="footer__main--redes-sociais">
             <li>
               <i class="fa-brands fa-twitter"></i>
             </li>
+
             <li>
               <i class="fa-brands fa-instagram"></i>
             </li>
+
             <li>
               <i class="fa-brands fa-facebook-f"></i>
             </li>
+
             <li>
               <a href="https://github.com/anchioro"><i class="fa-brands fa-github"></i></a>
             </li>
           </ul>
         </section>
       </div>
+
+      <!-- Pequena div para mostrar o "copyright" -->
       <div class="footer__main--copyright">
         <p>Feito por <a href="https://github.com/anchioro">Mateus Hennich</a> - 2023</p>
       </div>

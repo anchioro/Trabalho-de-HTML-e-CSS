@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roteiro Ventura</title>
 
+    <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="style/style.css" />
+
+    <!-- Ícone da página (favicon) -->
     <link rel="icon" href="img/iconHeader.png" />
 
+    <!-- Inclusão do arquivo JavaScript externo -->
     <script src="script/script.js"></script>
+
+    <!-- Inclusão da biblioteca Font Awesome -->
     <script src="https://kit.fontawesome.com/e8aef84763.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="home">
+      <!-- Início do header -->
       <div class="header">
         <img src="img/travel.gif" alt="Ícone do Cabeçalho" class="plane" />
+
         <h1>Roteiro Ventura</h1>
         <p>O lugar ideal para você planejar suas viagens.</p>
+
         <div class="button">
           <a href="#travel">Começar</a>
           <i class="fa-solid fa-caret-right"></i>
@@ -25,6 +34,7 @@
     </header>
 
     <nav id="navbar">
+      <!-- Definição do conteúdo da navbar contidas em uma lista indefinida -->
       <div class="navbar">
         <ul>
           <li>
@@ -51,6 +61,7 @@
 
     <main>
       <div id="about">
+        <!-- Definição da seção "sobre" da página -->
         <section class="about">
           <div class="about-p">
             <h2>Sobre</h2>
@@ -70,15 +81,19 @@
       </div>
 
       <div id="travel">
+        <!-- Definição da seção "viajar" da página -->
         <section class="travel">
           <h2>Planejar sua próxima viagem</h2>
 
+          <!-- Container para englobar todos os outros -->
           <div class="formulario">
             <form method="get">
               <h3>
                 Passagens <br />
                 Aéreas
               </h3>
+
+              <!-- Blocos menores contendo o conteúdo -->
               <div class="caixa-formulario">
                 <label for="from">De onde você está saindo?</label>
                 <input type="text" name="from" id="from" placeholder="Aeroporto" />
@@ -120,6 +135,8 @@
               </div>
             </form>
           </div>
+
+          <!-- Botão para enviar o formulário -->
           <div class="button">
             <a href="">Buscar Voos</a>
             <i class="fa-solid fa-caret-right"></i>
@@ -132,9 +149,13 @@
       </div>
 
       <div id="discover">
+        <!-- Definição da seção "descobrir" da página -->
         <section class="discover">
           <h2>Conheça novos lugares</h2>
+
+          <!-- Lista de elementos não ordenados para conter os conteúdos -->
           <ul class="lista">
+            <!-- Primeiro bloco -->
             <li>
               <div class="lista-elemento direita esquerda">
                 <div class="nota">
@@ -151,6 +172,8 @@
                 /></a>
               </div>
             </li>
+
+            <!-- Segundo bloco -->
             <li>
               <div class="lista-elemento direita">
                 <div class="nota">
@@ -168,6 +191,7 @@
               </div>
             </li>
 
+            <!-- Terceiro bloco -->
             <li>
               <div class="lista-elemento direita esquerda">
                 <div class="nota">
@@ -190,10 +214,13 @@
     </main>
 
     <footer id="footer" class="footer__main">
+      <!-- Criação de um container maior para englobar os outros -->
       <div class="footer__main--column-content">
+        <!-- Seção para enviar mensagens -->
         <section class="footer__main--message">
           <h2>Envie uma mensagem</h2>
           <form class="footer__main--forms">
+            <!-- Separação de diferentes containers -->
             <div class="form-group">
               <label for="nome">Nome</label>
               <input type="text" name="nome" id="nome" placeholder="Digite o seu primeiro e último nome" />
@@ -218,10 +245,13 @@
           </form>
         </section>
 
+        <!-- Atribuição da linha vertical no meio da página -->
         <div class="linha-vertical"></div>
 
+        <!-- Seção de contatos -->
         <section class="footer__main--contato">
           <h2>Contato</h2>
+          <!-- Criação do bloco de cima contendo o endereço -->
           <div class="footer__main--bloco-1">
             <address class="footer__main--endereco">
               <dt>Endereço</dt>
@@ -235,23 +265,29 @@
             </address>
           </div>
 
+          <!-- Segundo bloco contendo as redes sociais -->
           <h2>Redes Sociais</h2>
           <ul class="footer__main--redes-sociais">
             <li>
               <i class="fa-brands fa-twitter"></i>
             </li>
+
             <li>
               <i class="fa-brands fa-instagram"></i>
             </li>
+
             <li>
               <i class="fa-brands fa-facebook-f"></i>
             </li>
+
             <li>
               <a href="https://github.com/anchioro"><i class="fa-brands fa-github"></i></a>
             </li>
           </ul>
         </section>
       </div>
+
+      <!-- Pequena div para mostrar o "copyright" -->
       <div class="footer__main--copyright">
         <p>Feito por <a href="https://github.com/anchioro">Mateus Hennich</a> - 2023</p>
       </div>
