@@ -27,7 +27,7 @@
         <p>O lugar ideal para você planejar suas viagens.</p>
 
         <div class="button">
-          <a href="#travel">Começar</a>
+          <a href="index.html#travel">Começar</a>
           <i class="fa-solid fa-caret-right"></i>
         </div>
       </div>
@@ -67,7 +67,7 @@
 
           <!-- Parte de cima do primeiro bloco antes do <hr> -->
           <div class="bloco__viagem--header">
-            <div>
+            <div class="bloco__viagem--container">
               <h3>Resumo da Viagem</h3>
 
               <p><em>Destino</em>: Rio de Janeiro, RJ, Brasil</p>
@@ -79,6 +79,9 @@
 
               <!-- Linha horizontal -->
               <hr />
+
+              <!-- Imagem lateral -->
+              <img src="img/RJ1.jpg" alt="Picture RJ Header" />
 
               <!-- Conteúdo principal da primeiro bloco -->
               <div class="bloco__viagem--main">
@@ -141,12 +144,17 @@
           </div>
         </div>
 
+        <span class="navegacao--texto">
+          Alterar <br />
+          página
+        </span>
+
         <!-- Adição do botão para continuar-->
         <div class="button">
           <div class="text">
             <a href="pagina2.html#bloco__viagem--2">Próxima Página</a>
           </div>
-          <a href="pagina2.html"><i class="fa-solid fa-caret-right"></i></a>
+          <a href="pagina2.html#bloco__viagem--2"><i class="fa-solid fa-caret-right"></i></a>
         </div>
       </div>
 
@@ -312,7 +320,10 @@
 
       <!-- Pequena div para mostrar o "copyright" -->
       <div class="footer__main--copyright">
-        <p>Feito por <a href="https://github.com/anchioro">Mateus Hennich</a> - 2023</p>
+        <p>
+          Feito por <a href="https://github.com/anchioro">Mateus Hennich</a> em 2023 -
+          <a href="licenca.html#main" class="link">LICENÇA</a>
+        </p>
       </div>
     </footer>
   </body>
