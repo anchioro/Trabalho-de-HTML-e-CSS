@@ -692,9 +692,16 @@ img {
 }
 
 .next__page .button {
+  margin-inline: 25px;
+
+  border-radius: 10px;
+
+  background-color: rgba(57, 57, 57, 0.1);
+
   display: flex;
 
-  padding: 0;
+  padding: 10px;
+  padding-inline: 15px;
   margin: 0;
 
   margin-inline: 50px;
@@ -734,6 +741,94 @@ img {
 
 .button:hover .fa-caret-left {
   animation: moveLeft 0.1s ease forwards;
+}
+
+.comments__container {
+  background-color: #bdc9e0;
+  display: block;
+
+  padding-bottom: 25px;
+}
+
+.comments__container h3 {
+  padding-block: 32px;
+  margin: 0;
+
+  padding-left: 2vw;
+}
+
+.comments__container--bloco {
+  background-color: rgba(255, 255, 255, 0.15);
+
+  padding-block: 5px;
+
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.comments__container--bloco:last-child {
+  margin-bottom: 0px;
+}
+
+.comments__bloco--image img {
+  height: 40px;
+
+  border-radius: 100%;
+  margin-left: 2vw;
+}
+
+.comments__text {
+  margin-left: 1vw;
+  margin-right: 3vw;
+}
+
+.comments__text form {
+  border-bottom: 1px solid black;
+}
+
+.comments__text textarea {
+  resize: none;
+
+  margin: 0;
+  max-width: 90vw;
+  max-height: 2rem;
+
+  min-width: 90vw;
+  min-height: 2rem;
+
+  background-color: rgba(0, 0, 0, 0);
+
+  border: none;
+}
+
+.comments__text textarea:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+
+  outline: none;
+  box-shadow: none;
+}
+
+.comments__text--header {
+  margin-bottom: 1vw;
+}
+
+.comments__text--header .usuario {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.comments__text--main p {
+  padding: 0;
+  margin: 0;
+
+  line-height: normal;
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-indent: 0px;
+
+  font-size: 1rem;
+
+  background-color: inherit;
 }
 
 @media screen and (max-width: 600px) {
@@ -1000,5 +1095,13 @@ img {
   .next__page .fa-caret-left {
     font-size: 2rem;
     color: black;
+  }
+
+  .comments__text textarea {
+    max-width: 80vw;
+    max-height: 2rem;
+
+    min-width: 80vw;
+    min-height: 2rem;
   }
 }
