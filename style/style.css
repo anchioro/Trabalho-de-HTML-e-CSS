@@ -313,6 +313,14 @@ p {
     width: 32px;
     margin-right: 1vw;
   }
+
+  .bloco__viagem--header .bloco__viagem--container img {
+    display: none;
+  }
+
+  .next__page .navegacao--texto {
+    display: none;
+  }
 }
 
 /* Estilização de um espaço horizontal vazio */
@@ -558,6 +566,11 @@ a {
 
 .footer__main .footer__main--copyright a {
   font-size: x-small;
+}
+
+.footer__main--copyright .link {
+  color: rgb(17, 35, 115);
+  text-decoration: dotted underline;
 }
 
 /* Estilização da página de licenças */
@@ -1073,6 +1086,18 @@ img {
     display: none;
   }
 
+  .bloco__viagem--container img {
+    text-align: center;
+
+    display: block;
+    box-shadow: blue 0px 0px 0px 2px inset, #3e50a2 20px -20px;
+
+    max-height: 60vh;
+
+    margin: 0;
+    margin-block: 30px;
+  }
+
   .bloco__viagem--2 .main__container--gallery ul {
     display: block;
   }
@@ -1099,6 +1124,13 @@ img {
   /* Início estilização botão de navegação de páginas*/
   .next__page .text a {
     display: none;
+  }
+
+  .next__page .navegacao--texto {
+    display: inline;
+
+    font-size: 1.25rem;
+    font-family: sans-serif;
   }
 
   .next__page .fa-caret-right {
